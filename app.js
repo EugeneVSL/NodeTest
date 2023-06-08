@@ -1,8 +1,7 @@
 const {checkInventory} = require('./library.js');
 
-const order = [['sunglasses', 1], ['bags', 2]];
+const order = [['sunglasses', 1905], ['bags', 2]];
 
-// Write your code below:
 const handleSuccess = (succesfullOrder) => {
     console.log(succesfullOrder);
 };
@@ -11,5 +10,9 @@ const handleFailure = (rejectedOrder) => {
     console.log(rejectedOrder);
 };
 
-checkInventory(order).then(handleSuccess, handleFailure);
+// Write your code below:
+checkInventory(order)
+  .then(handleSuccess)
+  .catch(handleFailure);
+
     
